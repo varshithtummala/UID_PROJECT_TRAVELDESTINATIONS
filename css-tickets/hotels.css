@@ -1,0 +1,31 @@
+.hotel_form{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    border : 2px solid black;
+    border-radius : 30px;
+}
+.hotel_form h1{
+    font-size : 50px;
+    padding-right : 22px;
+    padding-left: 100px;
+}
+.hotel_form input[type="text"]{
+    margin-left: 50px;
+    padding: 19px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.hotel_form2 h2{
+    font-size : 30px;
+    padding-left: 50px;
+}
+.hotel_form2 input[type="date"]{
+    margin-left : 20px;
+    margin-right : 20px;
+    vertical-align: middle;
+}
+.hotel_form2 input[type="number"]{
+    margin-left : 20px;
+    margin-right : 20px;
+    vertical-align: middle;
+}

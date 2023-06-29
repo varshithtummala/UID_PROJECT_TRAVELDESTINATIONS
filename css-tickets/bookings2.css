@@ -1,0 +1,123 @@
+body{
+    margin:0px;
+}
+
+.background img{
+    z-index : -1;
+    position : fixed;
+    width : 100%;
+}
+.nav2{
+    position : absolute;
+    top:13%;
+    width: 100%;
+}
+.nav2 a{
+    color : white;
+    margin-right : 30px;
+    padding : 20px 10px;
+    text-decoration:none;
+    font-size : 20px;
+}
+.nav2 a:hover{
+    color : white;
+}
+#active{
+    background-color :rgba(0, 0, 0, 0.247);
+    border : 1px solid black;
+    border-radius : 5px;
+}
+.nav2 p{
+    text-align : center;
+}
+.booking{
+    position : absolute;
+    top : 30%;
+    left : 20%;
+    width : 60%;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius : 10px;
+}
+.trip{
+    display : flex;
+}
+.trip p{
+    margin-left : 30px;
+    color : white;
+    font-size : 25px;
+}
+.container{
+    display : flex;
+}
+.textbox p{
+    color : white;
+    margin-left : 30px;
+    font-size : 30px;
+}
+.textbox input[type="text"]{
+    width : 300px;
+    height : 50px;
+    border : 2px solid gold;
+    border-radius : 20px;
+    font-size :25px;
+    color : white;
+    background-color :rgba(0, 0, 0, 0.247);
+}
+.date {
+    display : flex;
+}
+.date p{
+    margin-left : 30px;
+    font-size : 30px;
+    color : white;
+}
+.date input[type="date"]{
+    height : 50px;
+    width : 200px;
+    font-size : 20px;
+    border-radius : 20px;
+    background-color :rgba(0, 0, 0, 0.247);
+    color : white;
+    border : 2px solid gold;
+}
+.row3{
+    display : flex;
+    padding-bottom : 20px;
+}
+.content p{
+    margin-left : 30px;
+    font-size : 30px;
+    color : white;
+}
+.content input[type="number"]{
+    margin-left : 30px;
+    height : 30px;
+    width : 120px;
+    border : 2px solid gold;
+    background-color :rgba(0, 0, 0, 0.247);
+    border-radius : 20px;
+    font-size :30px;
+    color: white;
+    padding : 5px 10px;
+}
+.content select{
+    margin-left : 30px;
+    height : 50px;
+    width : 200px;
+    border : 2px solid gold;
+    background-color :rgba(0, 0, 0, 0.247);
+    border-radius : 20px;
+    font-size :25px;
+    color: white;
+    padding : 5px 10px;
+}
+.row3 button{
+    margin-top : 90px;
+    margin-left : 50px;
+    width : 200px;
+    height : 50px;
+    background-color : rgb(255, 60, 0);
+    border-radius :20px;
+    font-size : 25px;
+    color : white;
+}
