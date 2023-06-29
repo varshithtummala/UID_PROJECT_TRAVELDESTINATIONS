@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet"  href="css/footer.css">
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			scroll-behavior: smooth;
+		}
+		.p1
+		{
+			height: 100vh;
+			width: 100%;
+			animation-duration: 20s;
+			animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-name: change;	
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+		@keyframes change
+		{
+			0%
+			{
+				background-image: url('images-adv/back_1.jpg');
+			}
+			50%
+			{
+				background-image: url('images-adv/back_2.jpg');
+			}
+			100%
+			{
+				background-image: url('images-adv/back_3.jpg');
+			}
+		}
+		.head
+		{
+			color: white;
+			position: absolute;
+			top: 180px;
+			left: 660px;
+			font-size: 45px;
+			text-shadow: 0 0 10px rgb(0, 0, 0);
+		}
+		.first
+		{
+			position: absolute;
+			top: 325px;
+			left: 180px;
+			box-shadow: 1px;
+			transition: 0.3s;
+		}
+		.second
+		{
+			position: absolute;
+			top: 325px;
+			left: 490px;
+			height: auto;
+			box-shadow: 1px;
+			transition: 0.3s;
+		}
+		.third
+		{
+			position: absolute;
+			top: 325px;
+			left: 800px;
+			height: auto;
+			box-shadow: 1px;
+			transition: 0.3s;
+		}
+		.fourth
+		{
+			position: absolute;
+			top: 325px;
+			left: 1060px;
+			height: auto;
+			box-shadow: 1px;
+			transition: 0.3s;
+		}
+		img
+		{
+			border-radius: 10px;
+		}
+		.box_text
+		{
+			position: relative;
+			top: -60px;
+			left: 60px;
+			width: 20px;/*Don't remove this*/
+			color: white;
+			font-size: 30px;
+			font-family: monospace;
+			font-weight: bold;
+		}
+		#com:hover
+		{
+			transform: scale(1.05);
+			box-shadow: 1px rgba(0, 0, 0, 0.25);	
+		}
+		.p2
+		{
+			height: 941px;
+		}
+		.p2_info
+		{
+			padding: 75px;
+			width: 550px;
+			text-indent: 30px;
+			line-height: 1.4;
+			position: relative;
+			left: 30px;
+		}
+		.p2_pic
+		{
+			position: relative;
+			top: -840px;
+			left: 770px;
+		}
+		p
+		{
+			text-align: justify;
+			text-indent: 1.4;
+		}
+		.Surf_1
+		{
+			position: relative;
+			left: 100px;
+		}
+		.Surf_2
+		{
+			position: relative;
+			top: 338px;
+			left: -403px;
+		}
+		.p3_info
+		{
+			width: 550px;
+			text-indent: 30px;
+			line-height: 1.8;
+			position: relative;
+			left: 780px;
+			top: -300px;
+		}
+		.p4
+		{
+			padding-bottom: 20px;
+			height: 1000px;
+			position: relative;
+			top: -100px;
+		}
+		.back_text_1
+		{
+			width: 400px;
+			position: relative;
+			left: 110px;
+			top: -20px;
+			background-color: skyblue;
+			padding: 60px;
+			border-radius: 10px;
+			text-align: justify;
+		}
+		.back_text_2
+		{
+			width: 390px;
+			position: relative;
+			left: 800px;
+			top: -390px;
+			background-color: skyblue;
+			padding: 60px;
+			border-radius: 10px;
+		}
+		.back_text_3
+		{
+			width: 390px;
+			position: relative;
+			left: 110px;
+			top: -300px;
+			background-color: skyblue;
+			padding: 60px;
+			border-radius: 10px;
+		}
+		.back_text_4
+		{
+			width: 390px;
+			position: relative;
+			left: 830px;
+			top: -650px;
+			background-color: skyblue;
+			padding: 50px;
+			border-radius: 10px;
+		}
+		#hello:hover
+		{
+			transform: scale(1.03);
+			box-shadow: 1px rgba(0, 0, 0, 0.25);
+			cursor: pointer;
+			opacity: 0;
+    		transition: .7s ease;
+    		background-color: black;			
+		}
+		.img
+		{
+			position: relative;
+			top: -1500px;
+		}
+		.geo
+		{
+			line-height: 1.5;
+			font-family: sans-serif;
+			color: black;
+			width: 600px;
+			position: relative;
+			background-color: rgba(225, 225, 225, 0.5);
+			box-shadow: 1px black;
+			border-radius: 10px;
+			font-weight: bold;
+			padding: 10px;
+			text-align: justify;
+			box-shadow: 2px black;
+			position: relative;	
+			left: 760px;
+			top: -700px;
+			height: 650px;			
+		}
+		.p5
+		{
+			height: 1000px;
+		}
+		.all
+		{
+			margin: 25px;
+			background-color: rgba(225, 225, 225, 0.5);
+			border-radius: 10px;
+			box-shadow: 10px black;
+		}
+		body
+		{
+			background-image: url('images-adv/Ver_2.jpg');
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+		.lastline
+		{
+			text-align: center;
+			font-size: 27px;
+			font-weight: bold;
+			position: relative;
+			top: -125px;
+		}
+	</style>
+</head>
+<body>
+		<div class="backside">
+		<div class="navbg">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="homepage.html">home</a></button>
+            </div>
+          <div class="dropdown">
+              <button class="dropbtn"><a>State-wise&nbsp;<i class="fa fa-caret-down"></i></a>
+              </button>
+              <div class="dropdown-content">
+                <a href="state_tourism_kerala.html">Kerala</a>
+                <a href="state_tourism_rajasthan.html">Rajasthan</a>
+                <a href="state_tourism_Andhra_pradesh.html">Andhra Pradesh</a>
+              </div>
+            </div> 
+  
+            <div class="dropdown">
+                <button class="dropbtn"><a href="original.html">Adventure&nbsp;</a>
+                </button>
+              </div> 
+  
+              <div class="dropdown">
+                <button class="dropbtn"><a href="hillstations.html">Hill Station&nbsp;</a> 
+                </button>
+              </div> 
+  
+              <div class="dropdown">
+                <button class="dropbtn"><a href="beaches.html">Beaches&nbsp;</a>
+                </button>
+              </div> 
+  
+              <div class="dropdown">
+                <button class="dropbtn"><a href="np.html">National parks&nbsp;</a>
+                </button>
+              </div>
+
+			  <div class="dropdown">
+				<button class="dropbtn"><a href="templesmain.html">Temples&nbsp;</a>
+				</button>
+			  </div> 
+          </div>
+      </div>
+	<div class="p1"></div>
+	<div class="head">
+		KOVALAM
+	</div>
+	<div class="first" id="com">
+		<a href="#HIS">
+			<img src="images-adv/s1.png" alt="Info" width="50%" height="50%">
+			<div class="box_text">
+				HISTORY
+			</div>
+		</a>
+	</div>
+	<div class="second" id="com">
+		<a href="#SUR">
+			<img src="images-adv/s2.jpg" alt="Info" width="50%" height="50%">
+			<div class="box_text">
+				SURFING
+			</div>
+		</a>
+	</div>
+	<div class="third" id="com">
+		<a href="#PLA">
+			<img src="images-adv/s3.jpg" alt="Info" width="50%" height="50%">
+			<div class="box_text">
+				PLACES 
+			</div>
+		</a>
+	</div>
+	<div class="fourth" id="com">
+		<a href="#LOC">
+			<img src="images-adv/s4.png" alt="Info" width="50%" height="50%" style="position: relative; left: 50px;">
+			<div class="box_text">
+				LOCATION
+			</div>
+		</a>
+	</div>
+<div class="all">
+	<a id="HIS">
+	<div class="p2">
+		<div class="p2_info">
+			<h1 style="position: relative; padding-bottom: 20px; text-align: center; left: -50px; text-transform: uppercase;">The Waves</h1>
+			<p>Kovalam first received attention when the Regent Maharani Sethu Lakshmi Bayi of Travancore constructed her beach resort, Halcyon Castle, here towards the end of the 1920s. Thereafter the place was brought to the public eye by her nephew the Maharaja of Travancore. The European guests of the then Travancore kingdom discovered the potentiality of Kovalam beach as a tourist destination in the 1930s. However, Kovalam shot into limelight in the early seventies with arrivals of the masses of hippies on their way to Ceylon in the Hippie Trail. This exodus started the transformation of a casual fishing village of Kerala into one of the most important tourist destinations in all India.</p>
+			<br>
+			<p>Kovalam in Kerala is one of the hottest tourist destinations of the country. The Kovalam Beach lies very close to Thiruvananthapuram with a distance of only 16 Kilometers. The much publicized beach of today was once a tranquil village along the coast line. The Kovalam History tells us the story of transformation of the serene hamlet into a vibrant tourism site.</p>
+			<br>
+			<p>The Maharajah of Travancore will always hold a significant part in Kovalam History. Impressed by the beauty of the place, the King used to spend his leisure time there. His European guests soon came to know about the spot from him and by the third decade of twentieth century, it was made popular by the European visitors.</p>
+			<br>
+			<p>The greatest boost in Kovalam's popularity came during the 1970s when the Hippies arrived in Kovalam. Enchanted by its beauty and relatively peaceful ambiance the Hippy community came in hordes and in the process made it even more popular.</p>
+			<br>
+			<p>Tourism in Kerala has reached its pinnacle in the recent years and Kovalam is an integral part of the success story. The media attention on Kovalam has attracted national and international travel houses that arranges regular packaged tours bringing in tourists from all parts of the world.</p>
+
+		</div>
+		<img src="images-adv/p2_img.jpg" class="p2_pic">
+	</div>
+</a>
+<a id="SUR">
+	<div class="p3">
+		<img src="images-adv/Surfing_1.jpg" class="Surf_1">
+		<img src="images-adv/Surfing_2.jpg" class="Surf_2">
+		<div class="p3_info">
+			<h1 style="position: relative; padding-bottom: 30px; text-align: center; left: -50px;">SURFING</h1>
+			Surfing is a surface water sport in which an individual, a surfer, uses a board to ride on the forward section, or face, of a moving wave of water, which usually carries the surfer towards the shore. Waves suitable for surfing are primarily found on ocean shores, but can also be found in standing waves in the open ocean, in lakes, in rivers in the form of a tidal bore, or in wave pools.
+			A small coastal town on the Arabian Sea, Kovalam is a thing of beauty and an amazing beach destination. This sea surfing experience in the waters of Kovalam is a great experience to cherish as you enjoy the high of adventure.Surf for a total of 30 minutes after being trained for the first half an hour, and let the beauty of the shoreline pass you by in all its elegance.This water sport at high speeds and large waves will make for an experience full of excitement that one can get dizzy with the thrills.The focal point of Kovalam’s quiet, but powerful, surfing revolution.Kovalam stands out as a surfing destination in India due to its artificial surfing reef, completed in 2010. This man-made feature definitely did not bring Kovalam to become a world-class surf spot, but it surely helped making the spot way more consistent and organized.
+		</div>
+	</div>
+</a>
+<a id="PLA">
+	<div class="p4">
+		<div style="padding: 25px; position: relative; left: 520px; width: 300px; top: -50px; text-align: center;">
+			<h1>PLACES TO VISIT</h1>
+		</div>
+		<div style="position: relative; top: 50px; height: 1500px;">
+		<div class="back_text_1">
+			<h2 style="text-align: center; text-transform: uppercase; padding-bottom: 10px;">Padmanabhaswamy temple</h2>
+			The Padmanabhaswamy temple is a Hindu temple located in Thiruvananthapuram, the state capital of Kerala, India. The name of the city of Thiruvananthapuram in Malayalam translates to "The City of Lord Ananta",(The City Of Lord Vishnu) referring to the deity of the Padmanabhaswamy temple. The temple is built in an intricate fusion of the Chera style and the Dravidian style of architecture, featuring high walls, and a 16th-century gopura.
+		</div>
+		<div class="back_text_2">
+			<h2 style="text-align: center; padding-bottom: 10px;">KOVALAM BEACH</h2>
+			<p>Kovalam is an internationally renowned beach with three adjacent crescent beaches. It has been a favourite haunt of tourists since the 1930s. A massive rocky promontory on the beach has created a beautiful bay of calm waters ideal for sea bathing.The leisure options at this beach are plenty and diverse. Sunbathing, swimming, herbal body toning massages, special cultural programmes and catamaran cruising are some of them. The tropical sun acts so fast that one can see the faint blush of coppery tan on the skin in a matter of minutes. </p>
+		</div>
+		<div class="back_text_3">
+			<h2 style="text-align: center; padding-bottom: 10px;">HALCYON CASTLE</h2>
+			<p>Halcyon Castle was built in 1932 in the princely state of Travancore, in the modern-day state of Kerala, India. It was constructed by M.R.Ry Sri Rama Varma Valiya Koil Thampuran, the consort of Maharani Sethu Lakshmi Bayi, as a retreat for their family. In 1964 Valiya Koil Thampuran sold the entire property to the Government of India; since then it has been a luxury hotel. A dispute arose when the India Tourism Development Corporation (ITDC), which was running the hotel, sold it to a private hotel resort group</p>
+		</div>
+		<div class="back_text_4">
+			<h2 style="text-align: center; text-transform: uppercase; padding-bottom: 10px;">Velliyani LAKE</h2>
+			<p>It is around 9 km away from the Thiruvananthapuram Central Bus Station at Thampanoor. Buses ply to Vellayani Lake from City Depot at East Fort also. It is at a distance of 7 km from Kovalam via Poonkulam junction.A road passes through this lake; a bund has been constructed for this purpose. This lake attracts a lot of tourists. Once in Kovalam, a visitor should not allow to miss the opportunity of seeing this wonder lake of freshwater. Its crystal-clear calm water, especially during moonlit nights, is a craze for the minds. The locals say a side of the lake is Kochu Kovalam, meaning tiny Kovalam.</p>
+		</div>
+	
+		<div class="img">
+			<img src="images-adv/Padma.png" style="position: relative; left: 100px; top: 40px; transition: 0.3s;" id="hello">
+			<img src="images-adv/Beach_1.jpg" width="41%" height="41.7%" style="position: relative; left: 200px; top: 50px; transition: 0.3s;" id="hello">
+			<img src="images-adv/Castle.jpg" width="38%" height="42%" style="position: relative; left: 95px; top: 100px; transition: 0.3s;" id="hello">
+			<img src="images-adv/lake.jpg" style="position: relative; top: 100px; left: 220px; transition: 0.3s;" id="hello">
+		</div>
+		</div>
+	</div>
+</a>
+<a id="LOC">
+	<div class="p5">
+		<h1 style="position: relative; left: 650px; top: -50px;width: 800px;">LOCATION</h1>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31576.09226319909!2d76.96231381897721!3d8.400525413327411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05a5090a19ec65%3A0xb67f315bc0b762ac!2sKovalam%2C%20Kerala!5e0!3m2!1sen!2sin!4v1626582778925!5m2!1sen!2sin" width="600" height="700" style="border:0; border-radius: 10px; position: relative; left: 80px;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+		<div class="geo">
+			<h2 style="text-align: center; padding-bottom: 20px; padding-top: 20px;">GEOGRAPHICAL INFORMATION</h2>
+			<div style="text-indent: 30px;">
+				<p>Kovalam is an area which is 25 km from Trivandrum City in Kerala, India, located around 17 km south of the city center. The world famous Kovalam Beach is situated in this area of Trivandrum City.</p>
+				<br>
+				<p>Situated in the Indian state of Kerala, Kovalam is basically a beach town, where tourists can enjoy the glimpse of deep blue Arabian Sea. This beach town is located at a distance of 16KM from the Thiruvananthapuram city. The geographic location of this place actually made it an exquisite as well as unique tourist place. The beach town has three major beaches which are separated by rocky outcroppings.Due to its unique geographic location and climate, the sands of the beaches of Kovalam are neither golden, nor white; they are partially blackish in color. This is because of the presence of Ilmenite and Monazite, the sand here appears a bit blackish.</p>
+				<br>
+				<p>Kovalam Beach, today, is one of the most visited beaches in India and tourists from all over the world come to enjoy its sandy beaches and tranquil waters. The Kovalam Beach can be divided into three separate parts. The Southern most part is called the Lighthouse Beach and is the most popular one among the three. The Hawah Beach is the one located in the center and is the main beach of the fishermen.</p>
+				<br>
+				Shallow waters stretching for hundreds of metres are ideal for swimming. The beaches have steep palm covered headlands and are lined with shops that offer all kinds of goods and services.
+			</div>
+		</div>
+	</div>
+	<div class="lastline">
+			<div style="text-align: center; font-weight: bold; font-size: 30px;">GOVERNMENT CONTACT NUMBERS</div>
+				1. Medicine&nbsp&nbsp<img src="images-adv/download.png" width="30px" height="30px">0471-2730045&nbsp&nbsp2. Police&nbsp&nbsp<img src="images-adv/download.png" width="30px" height="30px">0471-2730067&nbsp&nbsp3. Hospital&nbsp&nbsp<img src="images-adv/download.png" width="30px" height="30px">0471-2730045
+		</div>
+</a>
+</div>
+		             <footer class="footer-distributed">
+
+                <div class="footer-left">
+    
+                    <h3>Incredible<span>India</span></h3>
+    
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        |
+                        <a href="#">Blog</a>
+                        |
+                        <a href="#">About</a>
+                        |
+                        <a href="#">Contact</a>
+                    </p>
+    
+                    <p class="footer-company-name">© INCREDIBLE INDIA  Pvt. Ltd.</p>
+                </div>
+    
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+						<p>amrita school of engineering,Karnataka 560035
+						</p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+91 9490448444</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@INDIA.com">support@INDIA.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        We provide the best travel information in our website</p>
+                    <div class="footer-icons">
+						<a href="https://developers.facebook.com/"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+						<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>

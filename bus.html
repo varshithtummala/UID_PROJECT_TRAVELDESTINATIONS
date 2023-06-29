@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css-tickets/bookings2.css">
+    <title>Bus Bookings</title>
+    <style>
+        .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: rgba(16, 231, 123, 0.747);
+        }
+        .nav2 a{
+            color : black;
+        }
+        .textbox input[type="text"], .date input[type="date"], .content input[type="number"], .content select{
+            border : 2px solid rgba(16, 231, 123, 0.747);
+            outline : none;
+        }
+        .row3 button{
+            background-color: rgba(16, 231, 123, 0.747);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"><img src="css-tickets/bus.jpg"></div>
+    <div class="navbg">
+        <div class="dropdown">
+          <button class="dropbtn"><a href="homepage.html">home</a></button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><a>State-wise&nbsp;<i class="fa fa-caret-down"></i></a>
+          </button>
+          <div class="dropdown-content">
+            <a href="state_tourism_kerala.html">Kerala</a>
+            <a href="state_tourism_rajasthan.html">Rajasthan</a>
+            <a href="state_tourism_Andhra_pradesh.html">Andhra Pradesh</a>
+          </div>
+        </div> 
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="original.html">Adventure&nbsp;</a>
+            </button>
+        </div> 
+
+        <div class="dropdown">
+            <button class="dropbtn"><a  href="hillstations.html">Hill Station&nbsp;</a> 
+            </button>
+        </div> 
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="beaches.html">Beaches&nbsp;</a>
+            </button>
+        </div> 
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="np.html">National parks&nbsp;</a>
+            </button>
+        </div> 
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="templesmain.html">Temples&nbsp;</a>
+            </button>
+        </div> 
+    </div>
+    <div class="nav2"><p>
+        <a href="flight.html"><i class="fa fa-plane" aria-hidden="true"></i>&nbsp;&nbsp;Flights</a>
+        <a href="train.html"><i class="fa fa-train"></i>&nbsp;&nbsp;Train</a>
+        <a id="active"><i class="fa fa-bus" aria-hidden="true"></i>&nbsp;&nbsp;Buses</a>
+        <a href="hotels.html"><i class="fa fa-building" aria-hidden="true"></i>&nbsp;&nbsp;Hotels</a>
+        </p>
+    </div>
+    <div class="booking">
+        <form>
+            <div class="trip">
+                <p>
+                <input type="radio" name="one-way" value="selected" id="one-way">
+                One-way</p>
+                <p>
+                <input type="radio" name="one-way" value="selected" id="one-way">
+                Round-trip</p>
+                <p>
+                <input type="radio" name="one-way" value="selected" id="one-way">
+                MultiCity</p>
+            </div>
+            <div class="container">
+            <div class="textbox">
+                <p><i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;</i>From :&nbsp;&nbsp;<input type="text" required></p>
+            </div>
+            <div class="textbox">
+                <p><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;To :&nbsp;&nbsp;<input type="text" required></p>
+            </div>
+            </div>
+            <div class="date">
+                <p>Date of Depature&nbsp;&nbsp;<input type="date" required></p>
+                <p>Date of Return&nbsp;&nbsp;<input type="date" required></p>
+            </div>
+            <div class="row3">
+                <div class="content">
+                    <p><i class="fa fa-users" aria-hidden="true"></i>&nbsp;Adult</p>
+                    <input type="number" value="1" name="number" required>
+                </div>
+                <div class="content">
+                    <p><i class="fa fa-child" aria-hidden="true"></i>&nbsp;Children</p>
+                    <input type="number" value="0" name="number">
+                </div>
+                <div class="content">
+                    <p><i class="fa fa-cube" aria-hidden="true"></i>&nbsp;Types</p>
+                    <select name="class=">
+                        <option value="bussiness">A/C Sleeper</option>
+                        <option value="First" selected>A/c seater</option>
+                        <option value="Economy">Sleeper</option>
+                        <option value="general">seater</option>
+                    </select>
+                </div>
+                <button type="submit">Show Buses</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

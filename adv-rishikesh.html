@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet"  href="css/footer.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		html
+		{
+			scroll-behavior: smooth;
+		}
+		.backside
+		{
+			width: 100%;
+			height: 100vh;
+			background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images-adv/Rishkesh.jpg');
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+		.info
+		{
+			font-size: 18px;
+			color: white;
+			font-family: monospace;
+			position: absolute;
+			top: 290px;
+			left: 290px;
+			text-transform: uppercase;
+		}
+		.main
+		{
+			font-size: 50px;
+			color: white;
+			font-family: Helvetica;
+			position: absolute;
+			top: 200px;
+			left: 200px;
+			text-transform: uppercase;
+		}
+		.first
+		{
+			position: absolute;
+			top: 150px;
+			left: 800px;
+			height: auto;
+			box-shadow: 1px;
+			transition: 0.3s;
+		}
+		.second
+		{
+			position: absolute;
+			top: 150px;
+			left: 1062px;
+			height: auto;
+			box-shadow: 1px;
+			transition: 0.3s;
+		}
+		.third
+		{
+			position: absolute;
+			top: 450px;
+			left: 800px;
+			height: auto;
+			box-shadow: 1px;
+			transition: 0.3s;
+		}
+		.fourth
+		{
+			position: absolute;
+			top: 450px;
+			left: 1062px;
+			height: auto;
+			box-shadow: 1px;
+			transition: 0.3s;
+		}
+		#com:hover
+		{
+			transform: scale(1.05);
+			box-shadow: 1px rgba(0, 0, 0, 0.25);
+		}
+		.p2
+		{
+			width: 100%;
+			height: 100px;
+			color: black;
+			font-family: monospace;
+			background-color: skyblue;
+			font-size: 25px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		.p3
+		{
+			width: 100%;
+			height: 140vh;
+			background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('images-adv/back_his.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: center;
+		}
+		.p4
+		{
+			width: 100%;
+			height: 130px;
+			color: black;
+			font-family: monospace;
+			background-color: dimgrey;
+			font-size: 25px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		.p5
+		{
+			width: 100%;
+			height: 103vh;
+			background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('images-adv/Back_rafting.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: center;			
+		}
+		.p6
+		{
+			background-color: #ff726f;
+			width: 100%;
+			height: 100px;
+			font-family: monospace;
+			font-size: 25px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		.p7
+		{
+			width: 100%;
+			height: 135vh;
+			background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('images-adv/Places_back.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: center;
+		}
+		.p8
+		{
+			background-color: #7a7a7a;
+			width: 100%;
+			height: 80px;
+			font-family: monospace;
+			font-size: 25px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		.p9
+		{
+			width: 100%;
+			height: 105vh;
+		}
+		img
+		{
+			border-radius: 10px;
+		}
+		.box_text
+		{
+			position: relative;
+			top: -60px;
+			left: 60px;
+			width: 20px;/*Don't remove this*/
+			color: white;
+			font-size: 30px;
+			font-family: monospace;
+			font-weight: bold;
+		}
+		#head
+		{
+			font-size: 35px;
+			color: white;
+			position: relative;
+			top: 60px;
+			left: 150px;
+		}
+		.map
+		{
+			position: relative;
+			left: 20px;
+			top: 180px;
+			width: 700px;
+		}
+		table
+		{
+			position: relative;
+			top: -150px;
+			left: 800px;
+			font-size: 30px;
+		}
+		.his_info
+		{
+			font-family: sans-serif;
+			color: black;
+			width: 600px;
+			position: relative;
+			top: 210px;
+			left: 800px;
+			background-color: rgba(225, 225, 225, 0.74);
+			border-radius: 10px;
+			font-weight: bold;
+			padding: 10px;
+			text-align: justify;
+		}
+		.box
+		{
+			line-height: 1.3;
+			font-family: sans-serif;
+			color: black;
+			width: 330px;
+			position: relative;
+			background-color: rgba(225, 225, 225, 0.74);
+			border-radius: 10px;
+			font-weight: bold;
+			padding: 10px;
+			text-align: justify;			
+		}
+		#one
+		{
+			top: 160px;
+			left: 110px;
+		}
+		#two
+		{
+			top: -404px;
+			left: 590px;
+		}
+		#three
+		{
+			top: -967px;
+			left: 1050px;
+		}
+		#four
+		{
+			width: 500px;
+			top: 90px;
+			left: 130px;
+		}
+		#five
+		{
+			width: 500px;
+			top: -140px;
+			left: 130px;
+		}
+		#six
+		{
+			width: 500px;
+			top: -370px;
+			left: 130px;	
+		}
+		.lastline
+		{
+			text-align: center;
+			font-size: 27px;
+			font-weight: bold;
+			position: relative;
+			top: -220px;
+		}
+		h2
+		{
+			font-family: sans-serif;
+		}
+		.last_info
+		{
+			line-height: 1.3;
+			font-family: sans-serif;
+			color: black;
+			width: 700px;
+			position: relative;
+			background-color: rgba(225, 225, 225, 1);
+			border-radius: 10px;
+			font-weight: bold;
+			padding: 10px;
+			text-align: justify;
+			box-shadow: 2px black;
+			position: relative;	
+			left: 760px;
+			top: -275px;
+			height: 430px;
+		}
+	</style>
+</head>
+<body>
+	<div class="backside">
+		<div class="navbg">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="homepage.html">home</a></button>
+            </div>
+          <div class="dropdown">
+              <button class="dropbtn"><a>State-wise&nbsp;<i class="fa fa-caret-down"></i></a>
+              </button>
+              <div class="dropdown-content">
+                <a href="state_tourism_kerala.html">Kerala</a>
+                <a href="state_tourism_rajasthan.html">Rajasthan</a>
+                <a href="state_tourism_Andhra_pradesh.html">Andhra Pradesh</a>
+              </div>
+            </div> 
+  
+            <div class="dropdown">
+                <button class="dropbtn"><a href="original.html">Adventure&nbsp;</a>
+                </button>
+              </div> 
+  
+              <div class="dropdown">
+                <button class="dropbtn"><a href="hillstations.html">Hill Station&nbsp;</a> 
+                </button>
+              </div> 
+  
+              <div class="dropdown">
+                <button class="dropbtn"><a href="beaches.html">Beaches&nbsp;</a>
+                </button>
+              </div> 
+  
+              <div class="dropdown">
+                <button class="dropbtn"><a href="np.html">National parks&nbsp;</a>
+                </button>
+              </div>
+
+			  <div class="dropdown">
+				<button class="dropbtn"><a href="templesmain.html">Temples&nbsp;</a>
+				</button>
+			  </div> 
+          </div>
+	</div>
+	<div class="main">
+		Rishikesh
+	</div>
+	<div class="info">
+		-&nbsp&nbspA Place that you have never imagined 
+	</div>
+	<div class="first" id="com">
+		<a href="#history">
+			<img src="images-adv/history.jpg" alt="Lord Shiva" width="50%" height="50%">
+			<div class="box_text">
+				HISTORY
+			</div>
+		</a>
+	</div>
+	<div class="second" id="com">
+		<a href="#Adven">
+			<img src="images-adv/raft.jpg" width="50%" height="50%">
+			<div class="box_text">
+				ADVENTURE
+			</div>
+		</a>
+	</div>
+	<div class="third" id="com">
+		<a href="#places">
+			<img src="images-adv/other.jpg" width="50%" height="50%">
+			<div class="box_text">
+				PLACES
+			</div>
+		</a>
+	</div>
+	<div class="fourth" id="com">
+		<a href="#geoinfo">
+			<img src="images-adv/Location.png" width="50%" height="50%">
+			<div class="box_text" style="color: #7a7a7a;">
+				Location
+			</div>
+		</a>
+	</div>
+	<div class="p2">
+		<div style="position: relative; top: 10px; font-family: monospace;">
+			"Rishikesh is not a <b>'place'</b> but its a <b>'feeling'</b>. Every traveller always wonder how do the lives in <b>'pieces'</b> to <b>'peace'</b> so easily."
+		</div>
+	</div>
+	<div class="p3">
+		<a id="history">
+			<b id="head">HISTORY OF RISHIKESH</b>
+			<div class="his_info">
+				&nbsp&nbsp&nbspRishikesh has been a part of the legendary "Kedarkhand". Legends state that Lord Rama did penance here for killing Ravana, the asura king of Lanka; and Lakshmana, his younger brother, crossed the river Ganges, using two jute ropes at the point where the present 'Lakshman Jhula' stands today. The 'Kedarkhand' of Skanda Purana, also mentions the existence of Indrakund at this very point. The jute-rope bridge was replaced by a 248-foot long iron-rope suspension bridge in 1889. After it was washed away in the 1924 floods, it was replaced in 1927 by the present stronger bridge built by the United Provinces Public Works Department. This bridge connects the two districts of Tapovan, Tehri and Jonk, Pauri Garhwal. Another similar suspension bridge Ram Jhula was built in 1986 at nearby Sivananda Nagar.
+				<br>
+				<br>
+				&nbsp&nbsp&nbspThe Ganges, one of the most sacred rivers to Hindus, flows through Rishikesh. Here the river leaves the Shivalik Hills in the Himalayas and flows into the plains of northern India. Several temples, ancient and new, are along the banks of the Ganges in Rishikesh. Shatrughna Mandir, Bharat Mandir (Lord Vishnu's avatar), Lakshman Mandir are the ancient temples established by Adi Shankaracharya. Shatrughna Temple is near Ram Jhula and Lakshman Mandir is situated near Lakshman Jhula.
+				<br>
+				<br>
+				&nbsp&nbsp&nbspThe historical records mention that some pilgrims used to stay at Rishikesh as a resting place before moving onwards to the higher mountains for the pilgrimage while a larger number used to visit Rishikesh as the original destination and visited various sites between Rishikesh and Lakshman Jhula before returning. However, Rishikesh has in recent decades shifted from a pilgrim to a tourist town. The International Yoga Festival introduced in 2000 has brought a new influx of tourists. Local markets have evolved from commercialising goods such as "local and religious handicrafts" to a more service-oriented tourist industry with "provision stores, cafes, hotels and yoga and meditation" as well as rafting.
+			</div>
+			<img src="images-adv/index.jpg" width="30%" height="30%" style="position: relative; top: -400px; left: 200px;">
+			<img src="images-adv/qwerty.jpg" width="30%" height="30%" style="position: relative; top: -50px; left: -263px;">
+		</a>
+	</div>
+	<div class="p4">
+		<div style="position: relative; top: 20px;font-family: monospace; font-weight: bold;">
+			"I Felt my lungs inflate with the onrush of scenery - air, mountains, trees, people. i thought , This is what is to be happy" - Sylvia Plath
+		</div>
+	</div>
+	<div class="p5">
+		<a id="Adven">
+			<b id="head">IT'S ADVENTURE TIME</b>
+			<div style="position: relative; top: -50px;">
+			<div class="box" id="one">
+				<img src="images-adv/Raft_or.jpg" width="60%" height="60%" style="position: relative; left: 65px;">
+				<div style="position: relative; font-family: sans-serif; text-indent: 30px;">
+					<h2 style="position: relative; left: 80px;">RAFTING</h2>
+					Rafting is a recreational outdoor activities which use an inflatable raft to navigate a river or other body of water. This is often done on whitewater or different degrees of rough water. Dealing with risk is often a part of the experience.
+					&nbsp&nbsp&nbsp&nbspIn Rishikesh, Rafting is the most popular and attractive adventure. The Equipment are made up of PVC Kevlar plastics and strong rubber. Oars are commonly made from the same materials as paddles. Wood, plastic, aluminum, and carbon fiber. Oars are designed for several different rivers with sightly different blade shapes built to handle varying river conditions. Wooden oars are typically built as one solid piece to help retain strength and resilience of the oar while it is strained under a load.
+				</div>			
+			</div>
+			<div class="box" id="two">
+				<img src="images-adv/Bungee_Jump.jpg" width="60%" height="60%" style="position: relative; left: 65px;">
+				<div style="position: relative; font-family: sans-serif; text-indent: 30px;">
+					<h2 style="position: relative; left: 45px;">BUNGEE JUMP</h2>
+					Bungee Jumping, is an activity that involves a person jumping from a great height while connected to a large elastic cord. The launching pad is usually erected on a tall structure such as a building or crane, a bridge across a deep ravine, or on a natural geographic feature such as a cliff. It is possible to jump from type of aircraft that has the ability to hover above the ground, such as a hot-air-balloon or helicopter. The thrill comes from the free-falling and the rebound. When person jumps, the cord stretches and the jumper flies upwards again as the cord recoils, and continues to oscillate up down until all the kinetic energy is dissipated.
+					In Rishikesh, being a hill area it has the high chance of getting fun jumping. 
+				</div>
+			</div>
+			<div class="box" id="three">
+				<img src="images-adv/trekking.jpg" width="60%" height="60%" style="position: relative; left: 65px;">
+				<div style="position: relative; font-family: sans-serif; text-indent: 30px;">
+					<h2 style="position: relative; left: 70px;">TREKKING</h2>
+					Trekking is a long, vigorous walk, usually on trails or footpaths in the countryside. Walking for pleasure. Religious pilgrimages have existed much longer but they involve walking long distances for a spiritual purpose associated with specific religions.
+					In Rishikesh, this adventure is very useful to adapt, the climatic conditions. Trekking is one of the most important aspects of rishikesh's adventure. On going for trekking people will be going to see the beauty of rishikesh.The Great Himalaya Trail is a route across the Himalayas. The original concept of the trail was to establish a single long distance trekking trail from the east end that includes a total of roughly 1,700 kilometres of path. 
+				</div>
+			</div>
+		</div>
+		</a>
+	</div>
+	<div class="p6">
+		<div style="position: relative; top: 10px; color: white; font-family: monospace; font-weight: bold;">
+			"you're off to great places! your mountain is waiting <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp so...get on your way." &nbsp&nbsp- Dr.Seuss
+		</div>
+	</div>
+	<div class="p7">
+		<a id="places">
+			<b id="head">PLACES TO VISIT</b>
+		<div style="position: relative; top: -20px;">
+			<div class="box" id="four">
+				<h2>Lakshman Jhula</h2>
+				Lakshman Jhula is a suspension bridge across the river Ganges, located 5 kilometres north-east of the city of Rishikesh in the Indian state of Uttarakhand. The bridge connects the two villages of Tapovan in Tehri Garhwal district, on the west bank of the river, to Jonk in Pauri Garhwal district, on the east bank. Lakshman Jhula is a pedestrian bridge that was also used by motorbikes. Despite its location on the outskirts of the city, it is one of the iconic landmarks of Rishikesh. A larger bridge 2 kilometres downstream from Lakshman Jhula is Ram Jhula.
+			</div>
+			<img src="images-adv/lakshman_jhula.jpg" style="position: relative; left: 790px; top: -145px;">
+			<div class="box" id="five">
+				<h2>Ganga Aarthi</h2>
+				The aarti is carried out facing the river. After the ritual is complete, devotees will cup their hands over the flame and raise their palms to their forehead in order to get the goddess's purification and blessing. The Ganga Aarti at Parmarth Niketan is organized and performed by ashram residents, particularly the children who are studying the Vedas there. The ceremony commences with the singing of bhajans, prayers, and a hawan (a purifying and sacred ritual that takes place around a fire, with the offerings made to Agni, the fire god). 
+			</div>
+			<img src="images-adv/Aarthi.jpg" style="position: relative;left: 850px; top: -370px;">
+			<div class="box" id="six">
+				<h2>Geeta Bhawan</h2>
+				Amidst the Himalayan range, on the bank of holy Ganges in Swargashram, stands the beautiful hermitage for the homeless and travellers, Geeta Bhawan. The Bhawan, at once, can accommodate more than 1000 devotees and provides them free stay. Although the Bhawan remains crowded round the year, the best time to visit is during summer for the day long Satsang programmes organized by the devotees.Geeta Bhawan provides pure vegetarian food, grocery items and Indian sweets, free ferry ride and dispensary. Other amenities available at Geeta Bhawan include Geeta Press book store, apparel shop and Ayurvedic department, which sell pure herbal products
+			</div>
+			<img src="images-adv/Geeta_Bhawanjpg.jpg" style="position: relative;left: 845px; top: -640px;">
+		</div>
+		</a>
+	</div>
+	<div class="p8">
+		<div style="position: relative; top: 20px; color: white; font-weight: bold;font-family: monospace;">
+			"life is a daring adventure OR NOTHING AT ALL."
+		</div>
+	</div>
+	<div class="p9">
+		<a id="geoinfo"></a>
+		<b style="font-size: 35px; position: relative; top: 120px; left: 370px;">GEOGRAPHICAL & EMERGENCY INFORMATION</b>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55240.22166155132!2d78.24855564536905!3d30.0794665629973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1625304453981!5m2!1sen!2sin" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+		<div class="last_info">
+			<h1 style="text-align: center;">LOCATION OF RISHIKESH</h1>
+			<div style="font-size: 18px; font-family: sans-serif; line-height: 1.4;">
+				Rishikesh is at 30.103368°N 78.294754°E. It has an average elevation of 340 metres (1,120 ft). The town is located in the Tehri Garhwal region of the northern Indian state of Uttarakhand.
+				<br>
+				After flowing 249 km (155.343 mi) through its narrow Himalayan valley, the Ganges emerges from the mountains at Rishikesh, then debouches onto the Gangetic Plain at the pilgrimage town of Haridwar. Despite the pollution of the Ganges, the water in Rishikesh is relatively unaffected as the major polluting points are down river in the neighbouring state of Uttar Pradesh.
+				<br>
+				The Tehri Dam is just 86 km (53 mi) and Uttarkashi, a popular yoga destination is 170 km (110 mi) uphill on the way to Gangotri Dham. Rishikesh is the starting point for travelling to the four Chota Char Dham pilgrimage places—Badrinath, Kedarnath, Gangotri, and Yamunotri. It is also a starting point for the Himalayan tourist destinations such as Harsil, Chopta, Auli and famous summer and winter trekking destinations like Dodital, Dayara Bugyal, Kedarkantha, Har Ki Dun for camping and grandeur Himalayan panoromic views. 
+			</div>
+		</div>
+		<div class="lastline">
+			<div style="text-align: center; font-weight: bold; font-size: 30px;">GOVERNMENT CONTACT NUMBERS</div>
+				1. Medicine&nbsp&nbsp<img src="images-adv/download.png" width="30px" height="30px">0135-2462907&nbsp&nbsp2. Police&nbsp&nbsp<img src="images-adv/download.png" width="30px" height="30px">0135-2462920&nbsp&nbsp3. Hospital&nbsp&nbsp<img src="images-adv/download.png" width="30px" height="30px">0135-2462929
+		</div>
+	</div>
+	             <footer class="footer-distributed">
+
+                <div class="footer-left">
+    
+                    <h3>Incredible<span>India</span></h3>
+    
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        |
+                        <a href="#">Blog</a>
+                        |
+                        <a href="#">About</a>
+                        |
+                        <a href="#">Contact</a>
+                    </p>
+    
+                    <p class="footer-company-name">© INCREDIBLE INDIA  Pvt. Ltd.</p>
+                </div>
+    
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+						<p>amrita school of engineering,Karnataka 560035
+						</p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+91 9490448444</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@INDIA.com">support@INDIA.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        We provide the best travel information in our website</p>
+                    <div class="footer-icons">
+						<a href="https://developers.facebook.com/"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+						<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>

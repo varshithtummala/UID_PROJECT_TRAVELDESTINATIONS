@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up page</title>
+	<style type="text/css">
+		.C
+		{
+			position: relative;
+			top: 200px;
+			animation-duration: 0.6s;
+			animation-timing-function: ease;
+			animation-name: expand;
+			animation-direction: forwards;
+			font-family: sans-serif;
+		}
+		body
+		{
+			background-image: url('images-sign_up/Background.jpg');
+			background-repeat: no;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		table
+		{
+			padding-right: 30px;
+			padding-right: 10px;
+		}
+		@keyframes expand
+		{
+			0%
+			{
+				transform: translateX(1400px);
+			}
+			100%
+			{
+				transform: translateX(5px);
+			}
+		}
+		.sub
+		{
+			position: relative;
+			top: 10px;
+		}
+		form
+		{
+			position: relative;
+			left: 20px;
+		}
+		h6
+		{
+			position: relative;
+			left: 10px;
+		}
+	</style>
+	<script type="text/javascript">
+		function thankyou() 
+		{
+			var email=document.hello.email.value;
+			var num=document.hello.num.value;
+			var place=email.indexOf("@");
+			var num=document.hello.num.value;
+			if(place<1)
+			{
+				alert("Please enter a valid email id");
+				return false;
+			}
+			if(num.length<10)
+			{
+				alert("Please enter a valid phone number");
+				return false;
+			}
+			else
+			{
+				window.location.href="homepage.html";	
+				alert("Thank You for Subscribing");
+				alert("We Will be sending you our most recommended travel suggestion");
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="C">
+	<table align="center" align="middle" style="background-color: rgba(240, 255, 249, 0.3); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
+		<tr>
+			<td>
+				<table align="center" cellpadding="20%">
+					<tr>
+						<td>
+							<h1 align="center">Sign up</h1>
+							<form name="hello" method="get" onsubmit="return thankyou()">
+								Name<br>
+								<input type="text" name="username" ><br>
+								Email:<br>
+								<input type="email" name="email" placeholder="example@gmail.com"><br>
+								Phone number:<br>
+								<input type="tel" name="num" pattern="[0-9]{10}" placeholder="1234567890">
+								<br>
+								<input type="button" name="submit" value="Submit" style="position: relative; left: 50px; top: 5px;" onclick="thankyou()">
+							</form>
+							<hr style="position: relative; top: 8px;">
+							<h6>OR SIGN UP WITH <BR>YOUR GOOGLE ACCOUNT INSTEAD</h6>
+							<a href="https://accounts.google.com/signin/v2/identifier?hl=en&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&flowName=GlifWebSignIn&flowEntry=AddSession" target="_top">
+								<img src="images-sign_up/g.jpg" align="center" style="position: relative; left: 68px; top: -20px;">
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td><img src="images-sign_up/right.png" ></td>
+		</tr>
+	</table>
+	</div>
+
+</body>
+</html>

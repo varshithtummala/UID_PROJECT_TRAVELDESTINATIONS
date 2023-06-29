@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css-tickets/bookings2.css">
+    <title>Flight Bookings</title>
+    <style>
+        .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: rgb(243, 157, 171);
+        }
+        .textbox input[type="text"], .date input[type="date"], .content input[type="number"], .content select{
+            border : 2px solid pink;
+            outline : none;
+        }
+        .date input[type="date"]{
+            width : 180px;
+        }
+        .row3 button{
+            width : 400px;
+            margin-left : 50px;
+            background-color :rgb(235, 118, 138);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"><img src="css-tickets/hotel.jpg"></div>
+    <div class="navbg">
+        <div class="dropdown">
+          <button class="dropbtn"><a href="homepage.html">home</a></button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><a>State-wise&nbsp;<i class="fa fa-caret-down"></i></a>
+          </button>
+          <div class="dropdown-content">
+            <a href="state_tourism_kerala.html">Kerala</a>
+            <a href="state_tourism_rajasthan.html">Rajasthan</a>
+            <a href="state_tourism_Andhra_pradesh.html">Andhra Pradesh</a>
+          </div>
+        </div> 
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="original.html">Adventure&nbsp;</a>
+            </button>
+        </div> 
+
+        <div class="dropdown">
+            <button class="dropbtn"><a  href="hillstations.html">Hill Station&nbsp;</a> 
+            </button>
+        </div> 
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="beaches.html">Beaches&nbsp;</a>
+            </button>
+        </div> 
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="np.html">National parks&nbsp;</a>
+            </button>
+        </div> 
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="templesmain.html">Temples&nbsp;</a>
+            </button>
+        </div> 
+    </div>
+    <div class="nav2"><p>
+        <a href="flight.html"><i class="fa fa-plane" aria-hidden="true"></i>&nbsp;&nbsp;Flights</a>
+        <a href="train.html"><i class="fa fa-train"></i>&nbsp;&nbsp;Train</a>
+        <a href="bus.html"><i class="fa fa-bus" aria-hidden="true"></i>&nbsp;&nbsp;Buses</a>
+        <a id="active"><i class="fa fa-building" aria-hidden="true"></i>&nbsp;&nbsp;Hotels</a>
+        </p>
+    </div>
+    <div class="booking">
+        <form>
+            <div class="container">
+            <div class="textbox">
+                <p><i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;</i>Name of City/Town/Area/Region&nbsp;&nbsp;<input type="text" required></p>
+            </div>
+            </div>
+            <div class="date">
+                <p>Date of Check-in&nbsp;&nbsp;<input type="date" min="2021-07-19" required></p>
+                <p>Date of Check-out&nbsp;&nbsp;<input type="date" min="2021-07-19" required></p>
+            </div>
+            <div class="row3">
+                <div class="content">
+                    <p><i class="fa fa-users" aria-hidden="true"></i>&nbsp;Adult</p>
+                    <input type="number" value="1" name="number" min="1" required>
+                </div>
+                <div class="content">
+                    <p><i class="fa fa-child" aria-hidden="true"></i>&nbsp;Children</p>
+                    <input type="number" value="0" name="number" min="0">
+                </div>
+                <button type="submit">Show Hotels</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

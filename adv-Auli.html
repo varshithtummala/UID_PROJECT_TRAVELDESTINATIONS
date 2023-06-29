@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet"  href="css/footer.css">
+	<style type="text/css">/*https://www.euttaranchal.com/tourism/photos/auli-photos.php*/
+		*
+		{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			scroll-behavior: smooth;
+		}
+		.p1
+		{
+			height: 100vh;
+			width: 100%;
+			animation-duration: 20s;
+			animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-name: change;	
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+		@keyframes change
+		{
+			0%
+			{
+				background-image: url('images-adv/back_1_a.jpg');
+			}
+			50%
+			{
+				background-image: url('images-adv/back_2_a.jpg');
+			}
+			100%
+			{
+				background-image: url('images-adv/back_3_a.jpg');
+			}
+		}
+		body
+		{
+			background-image: url('images-adv/background.jpg');
+			background-attachment: fixed;
+		}
+		.trans_box
+		{
+			background-color: rgba(255, 255, 225, 0.68);
+			position: relative;
+			top: 610px;
+			border-radius: 10px;
+			width: 240px;
+			left: 637px;
+			border: 2px solid white;
+			text-shadow: 0 0 1px whitesmoke;
+			height: 80px;
+		}
+		.onimg
+		{
+			font-size: 70px;
+			color: #597DF3;
+			text-align: center;
+			font-family: sans-serif;
+			position: relative;
+			top: -80px;
+		}
+		.btn 
+		{
+  			box-sizing: border-box;
+  			appearance: none;
+  			background-color: transparent;
+  			border: 2px solid rgba(225, 225, 225, 0.99);
+  			border-radius: 0.6em;
+  			cursor: pointer;
+  			display: flex;
+  			align-self: center;
+  			font-size: 16px;
+  			line-height: 1;
+  			margin: 20px;
+  			position: relative;
+  			top: 80px;
+  			text-decoration: none;
+  			text-align: center;
+  			text-transform: uppercase;
+  			font-family: sans-serif;
+  			font-weight: bold;
+  			box-shadow: 0 0 40px 40px rgba(89,125,244,0.6) inset;
+		}
+		.btn:active
+		{
+			transform: scale(1.1);
+			box-shadow: 0 0 40px 40px rgba(255,255,255,1) inset;
+		}
+		.one
+		{
+			position: relative;
+			transition: 0.1s;
+			padding: 1.2em 2.8em;
+		}
+		.two
+		{
+			position: relative;
+			transition: 0.1s;
+			padding: 1.2em 3.15em;
+		}
+		.three
+		{
+			position: relative;
+			transition: 0.1s;
+			padding: 1.2em 3.55em;
+		}
+		.four
+		{
+			position: relative;
+			transition: 0.1s;
+			padding: 1.2em 3.3em;
+		}
+		.loc_info
+		{
+			font-family: sans-serif;
+			color: black;
+			width: 600px;
+			position: relative;
+			background-color: rgba(89,125,244,0.6);
+			box-shadow: 1px black;
+			border-radius: 10px;
+			line-height: 1.5;
+			padding: 10px;
+			text-align: justify;
+			box-shadow: 2px black;
+			position: relative;
+			left: 800px;
+			top: -705px;		
+		}
+		.p2
+		{
+			height: 800px;
+		}
+		img{ border-radius: 10px; }
+
+		.p3_info
+		{
+			background-color: rgba(89,125,244,0.6);
+			border-radius: 10px;
+			width: 500px;
+			margin-top: 30px;
+			margin-left: 140px;
+			padding: 20px;
+			text-align: justify;
+			line-height: 1.4;text-indent: 30px;
+		}
+		.p4
+		{
+			position: relative; top: -300px;
+		}
+		.p4_info
+		{
+			width: 1200px;
+			margin-top: 20px;
+			margin-left: 135px;
+			text-align: justify;
+			background-color: rgba(89,125,244,0.6);
+			padding: 20px;
+			border-radius: 10px;
+			line-height: 1.4;
+			text-indent: 30px;
+		}
+		.p5
+		{
+			position: relative;
+			top: -250px;
+			height: 900px;
+		}
+		.p5_in_1
+		{
+			width: 400px;
+			background-color: skyblue;
+			padding: 60px;
+			border-radius: 10px;
+			text-align: justify;
+			position: relative;
+			margin-left: 110px;
+			top: -663px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+		.p5_in_2
+		{
+			width: 400px;
+			background-color: skyblue;
+			padding: 60px;
+			border-radius: 10px;
+			text-align: justify;
+			position: relative;
+			margin-left: 830px;
+			top: -995px;
+			opacity: 0;
+			transition: 0.3s;			
+		}
+		.p5_in_3
+		{
+			width: 400px;
+			background-color: skyblue;
+			padding: 60px;
+			border-radius: 10px;
+			text-align: justify;
+			position: relative;
+			margin-left: 110px;
+			top: -960px;
+			opacity: 0;
+			transition: 0.3s;			
+		}
+		.p5_in_4
+		{
+			width: 400px;
+			background-color: skyblue;
+			padding: 60px;
+			border-radius: 10px;
+			text-align: justify;
+			position: relative;
+			margin-left: 830px;
+			top: -1245px;
+			opacity: 0;
+			transition: 0.3s;
+		}
+		#hello:hover
+		{
+			transform: scale(1.02);
+			box-shadow: 1px rgba(0, 0, 0, 0.25);
+			cursor: pointer;
+			opacity: 1;
+    		transition-timing-function: ease-in-out;		
+		}
+		.Good 
+		{
+			margin: 20px;
+			background-color: rgba(225, 225, 225, 0.5);
+			border-radius: 10px;
+			height: 3799px;
+		}
+	</style>
+</head>
+		<div class="backside">
+		<div class="navbg">
+            <div class="dropdown">
+              <button class="dropbtn"><a href="homepage.html">home</a></button>
+            </div>
+          <div class="dropdown">
+              <button class="dropbtn"><a>State-wise&nbsp;<i class="fa fa-caret-down"></i></a>
+              </button>
+              <div class="dropdown-content">
+                <a href="state_tourism_kerala.html">Kerala</a>
+                <a href="state_tourism_rajasthan.html">Rajasthan</a>
+                <a href="state_tourism_Andhra_pradesh.html">Andhra Pradesh</a>
+              </div>
+            </div> 
+  
+            <div class="dropdown">
+                <button class="dropbtn"><a href="original.html">Adventure&nbsp;</a>
+                </button>
+              </div> 
+  
+              <div class="dropdown">
+                <button class="dropbtn"><a href="hillstations.html">Hill Station&nbsp;</a> 
+                </button>
+              </div> 
+  
+              <div class="dropdown">
+                <button class="dropbtn"><a href="beaches.html">Beaches&nbsp;</a>
+                </button>
+              </div> 
+  
+              <div class="dropdown">
+                <button class="dropbtn"><a href="np.html">National parks&nbsp;</a>
+                </button>
+              </div>
+
+			  <div class="dropdown">
+				<button class="dropbtn"><a href="templesmain.html">Temples&nbsp;</a>
+				</button>
+			  </div> 
+          </div>
+      </div>
+<body>
+	<div class="p1">
+		<div class="trans_box">
+			<div class="onimg">
+				AULI
+			</div>
+		</div>
+	<a href="#loca">
+		<button class="btn one">Location</button>
+	</a>
+	<a href="#hist">
+		<button class="btn two">History</button>
+	</a>
+	<a href="#ski">
+		<button class="btn three">Skiing</button>
+	</a>
+	<a href="#plac">
+		<button class="btn four">Places</button>
+	</a>
+	</div>
+<div class="Good">	
+<a id="loca">
+	<div class="p2">
+		<h1 style="text-align: center; padding: 20px; font-family: sans-serif;">LOCATION</h1>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13831.371329405982!2d77.73617727636604!3d30.94866665688011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f50aafcc75db9%3A0xdc3ec1a504bf4830!2sAuli%2C%20Uttarakhand%20171210!5e1!3m2!1sen!2sin!4v1626617341334!5m2!1sen!2sin" width="700" height="700" style="margin-left: 50px; margin-top: 10px; border-radius: 10px; border: 0px;" allowfullscreen="" loading="lazy"></iframe>
+		<div class="loc_info">
+			<h1 style="text-transform: uppercase; padding-bottom: 20px; text-align: center;">Geographical Information</h1>
+			<p>Auli is in Chamoli district in the Himalayan mountains of Uttarakhand, India. Auli, also known as Auli Bugyal, in Garhwali, which means "meadow", is located at an elevation of 2,800 metres (9,200 ft) above sea level. Between June to October, the valley has one of highest number of flower species found anywhere in the world, with 520 species of high altitude plants, 498 of which are flowering plants with significant populations of endangered species.</p>
+			<br>
+			<p> Auli is surrounded by hilly areas of Uttarakhand. To get here you have to go through mountain roads. If you start your journey from Delhi, you will have to travel 492 kilometers. If you want to come by airplane then you have to reach Dehradun Airport. Which is the nearest airport to Auli. And if you want to go to Auli via train then you should reach the Haridwar railway station. Which is the nearest railway station to Auli.If you do not have your personal vehicle, then you also can get a bus, car, or bike on rent from Rishikesh.To travel from Dehradun to Auli, you will have to travel 294 kilometers. To reach Auli from Haridwar, y travel distance 274 kilometers.It has a 4 kilometres (2.5 mi) cable car, a chairlift and a ski lift, along with a maintained trek route. A small Hindu temple connected with the Hindu epic the Ramayana. </p>
+			<br>
+			<p>The nearest airport is Jolly Grant Airport in Dehradun, about 270 kilometres (170 mi) from Auli. The airport operates daily flights to Delhi, The nearest international airport is Indira Gandhi International Airport in Delhi, about 480 kilometres (300 mi) from Auli. The nearest railway stations are Rishikesh railway station (250 kilometres (160 mi)) and Dehradun railway station (290 kilometres (180 mi)). Nearby attractions include Vishnu Prayag, Gorson Bugyal, Kuari Pass, Joshimath, Badrinath, and Tapovan. Auli and Dehradun hosted the First South Asian Winter Games in 2011. </p>
+		</div>
+	</div>
+</a>
+<a id="hist">
+	<div class="p3">
+		<h1 style="text-transform: uppercase; padding: 30px; text-align: center; position: relative; left: -20px;">history</h1>
+		<div class="p3_info">
+			<p>In the 8th century AD, the excellent Guru Adi Shankaracharya is said to have step on these fields. The temple built by him at Joshimath still exists. For hundreds of years, the vivid semi-nomadic tribes of the Bhotiyas, of the Mongolian stock, passed through the routes at Auli, locally called Thatauli. </p>
+			<br>
+			<p>The history of Auli can be back to the 8th century. The temple built by The Great Guru Adi Shankaracharya at Joshimath still exists. The colorful semi-nomadic tribes of the Bhotiyas traversed the trails at Auli (locally called Thatauli), for hundreds of years. Their long-haired yaks assisted them in conducting a flourishing trade with nearby Tibet. </p>
+			<br>
+			<p>Before Auli was established as a ski resort its slopes were the training ground for men of valiance and courage-the ski-equipped men of the Indo-Tibetan Border Police. Among the awesome, legendary peaks ranged round Auli, the 23,490-feet-high Trishul (literal meaning, the strident of Lord Shiva) was the scene of a unique expedition in 1958. The Mountaineers took four days to climb the peak and only 90 minutes to ski down to the base camp.During the winter season, the Nandadevi mountain is always half-covered by the clouds. And that time visibility significantly decreases in snowfall time. Auli is also considered a sacred place among the 5 Naths like Badrinath and Kedar Nath.This lake gets full of ice also in the summertime so that tourists can also ski on this frozen lake. This lake is built at the top of the Auli mountain. This lake dries on its own during the winter season. And in summer rainwater gets accumulated in this lake.
+			</p>
+			<br>
+			<p>Auli is a hiking and ski destination and after the creation of the state of Uttarakhand, formerly part of Uttar Pradesh, Auli was marketed as a tourist destination. It is surrounded by coniferous and oak forests, with a panoramic view of the peaks of the Himalayas. The slopes are intended for both professional skiers and novices. The Garhwal Mandal Vikas Nigam Limited (GMVNL) a state government agency which takes care of this resort, and Uttarakhand Tourism Department conduct winter sports competitions at Auli to encourage skiing in India. </p>
+		</div>
+		<img src="images-adv/his_auli.jpg" width="40%" height="40%" style="position: relative; left: 750px; top: -800px;">
+		<img src="images-adv/his_auli_2.jpg" width="40%" height="40%" style="position: relative; left: 140px; top: -400px;">
+	</div>
+</a>
+<a id="ski">
+	<div class="p4">
+		<h1 style="text-transform: uppercase; padding: 30px; text-align: center; ">skiing</h1>
+		<div class="p4_img">
+			<img src="images-adv/Ski_1.jpg"style="margin-left: 55px;">
+			<img src="images-adv/Ski_2 .jpg" style="position: relative; left: 60px;">
+		</div>
+		<div class="p4_info">
+			<p>There is no better way to explore Himachal Pradesh than to slide on the melting snow covering the mountains. When it comes to skiing, the snow-capped mountains of Himachal Pradesh are some of the best places to go. The hills of Himachal Pradesh are carpeted in layers of fresh snow; they have some of the best and highest ski slopes in the world. Ski slopes of Himachal Pradesh provide a platform for the adventurers- from beginners to professionals. Manali in Himachal Pradesh plays host too many international skiing activities.</p>
+			<br>
+			<p>How about, sliding on the snow, like there is no end to exploring? This is what one experience when they go on a ski trail to Himachal Pradesh. Skiing experience in Himachal Pradesh is simply euphoric that it will stick to adventurer's memory for a lifetime. Solang Nala (Manali), Narkanda (Hindustan Tibet Road), Kufri, Mahasu ridge (Above Kufri), Rohtang Valley, and Hanuman Tibba are the best skiing destination in Himachal Pradesh. Some of the other nearby places to enjoy skiing in Manali is Kothi, Patalsu, Marhi, Gulaba and Dhundi. Tourists can get a nice view of the snow-capped Himalayas from the slopes of Rohtang valley and hence there is a great rush of visitors and tourists almost round the year. In Himachal Pradesh, Kufri is probably the oldest place in Himachal Pradesh which is associated with skiing and the slopes are still in use during winter. Regular ski courses are organized by Himachal Pradesh Tourism Development Corporation (HPTDC).</p>
+			<br>
+			<p>In winters, most areas of Himachal Pradesh are covered with a white sheet of snow and it simply looks breathtaking. Admiring the dramatic view from atop the ski lift, experiencing the rush of adrenaline as one passes through the edges of the mountain slopes- there's nothing like doing skiing on the slopes of Himachal Pradesh. Considered as the solitary station for winter sports enthusiasts, Himachal Pradesh offers is home to many snow-capped that few can match.</p>
+			<br>
+			<p>Ample snowfall formation and beautiful slopes make Himachal Pradesh a heavenly location for skiing in winters. Availability of good ski slopes in Himachal Pradesh keeps the skiers happy and enthusiastic. Ski away and enjoy to the fullest and to your heart's contents the most awesome slopes of Himachal Pradesh. Snow skiing on Kufri undulating slopes is just amazingly refreshing.</p>
+		</div>
+	</div>
+</a>
+<a id="plac"></a>
+	<div class="p5">
+		<h1 style="text-transform: uppercase; padding: 30px; text-align: center; position: relative; left: -30px; ">places to visit</h1>
+		<img src="images-adv/qwe_1.jpg" style="margin-left: 100px; " ><!--Gorson Bugyal-->
+		<img src="images-adv/qwe_2.png" style="position: relative; margin-left: 160px;"><!--Chenab Lake-->
+		<img src="images-adv/qwe_3.png" style="margin-left: 100px; margin-top: 30px;"><!--Narsingh Temple-->
+		<img src="images-adv/qwe_4.png" style="margin-left: 160px; margin-top: 30px;"><!--Trishul Peak Auli-->
+		<div class="p5_in_1" id="hello">
+			<h2>Gorson Bugyal</h2>
+				Gorson Bugyal is a Himalayan Alpine Meadow (commonly known as Bugyal) in Auli, Chamoli district of Uttarakhand. Gorson Bugyal is a skiing destination. The Bugyal has an average elevation of 3519m and is around 19 km from Joshimath. It is a large alpine meadow which has expanse of grass land that covers several hundred acres of land. It has a well maintained trek route. The trek to Gorson Bugyal passes through lush vegetation of apple orchards, oak and deodar forests.
+		</div>
+		<div class="p5_in_2" id="hello">
+			<h2>Chenab Lake</h2>
+			Chenab Lake is an artificial lake that serves as a reservoir for the people of Auli, Uttarakhand.  It is a small crystalline lake that is still less explored and in its purest state, holding the sights of tourists and making it an enchanting spot.The trek to Chenab lake is for those who truly want to have a crude and authentic trekking experience - through rocky passes hurdled with twigs and plants. Guarded by the Garhwal Himalayan range, Chenab Lake still has crystal clear water that acts like a prism to the
+		</div>
+		<div class="p5_in_3" id="hello">
+			<h2>Narsingh Temple</h2>
+			Narsinghji Temple is an ancient Hindu temple located at Prahlad Kund in the Hindaun City in the Indian state Rajasthan.According to Hindu scriptures (not mythology) the lord Narsingh Ji is an avatar of Lord Vishnu. The lord Narasimha had killed the devil named Hiranya Kashyap and gave help to his son Prahlada, so this temple is lord Narsinghji's temple.			
+		</div>
+		<div class="p5_in_4" id="hello">
+			<h2>Trishul Peak Auli</h2>
+		1The three Himalayan mountain peaks of western Kumaun as a whole form the Trishul peak. Having a height of 7120m, the Trishul group forms the southwest corner of the ring of peaks that enclose Nanda Devi Sanctuary. In 1907, the main peak - Trisul I - became the first peak over 7,000m to have ever been climbed by someone. The peak can be best viewed from Kausani or during the Roopkund Trek.
+		</div>
+	</div>
+</a>
+</div>
+		             <footer class="footer-distributed">
+
+                <div class="footer-left">
+    
+                    <h3>Incredible<span>India</span></h3>
+    
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        |
+                        <a href="#">Blog</a>
+                        |
+                        <a href="#">About</a>
+                        |
+                        <a href="#">Contact</a>
+                    </p>
+    
+                    <p class="footer-company-name">© INCREDIBLE INDIA  Pvt. Ltd.</p>
+                </div>
+    
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+						<p>amrita school of engineering,Karnataka 560035
+						</p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+91 9490448444</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@INDIA.com">support@INDIA.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        We provide the best travel information in our website</p>
+                    <div class="footer-icons">
+						<a href="https://developers.facebook.com/"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+						<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>

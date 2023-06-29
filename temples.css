@@ -1,0 +1,74 @@
+body{
+    background-image:url("images-temple/temple1.jpg");
+    background-repeat:no-repeat;
+    width:100%;
+}
+.intro2 p{
+    position : absolute;
+    top : 150px;
+    font-size : 30px;
+    color : rgb(0, 0, 0);
+    margin-left : 20px;
+    max-width : 400px;
+    background-color : rgba(255, 255, 255, 0.74);
+    padding : 10px;
+    border-radius : 5px;
+}
+.intro2 a{
+    position : absolute;
+    top : 400px;
+    left : 600px;
+    color : white;
+    background-color : black;
+    padding : 15px 20px;
+    font-size : 30px;
+    border-radius : 10px;
+    text-decoration: none;
+}
+.intro2 a:hover{
+    background-color :red;
+}
+.navbar2 a{
+    font-size: 20px;
+    float: left;
+    padding : 10px 20px;
+    font-family: cursive;
+    color: white;
+    margin-left:40px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.navbar2{
+    background-color: rgb(236, 138, 25);
+    overflow: hidden;
+    width: 100%;
+}
+.navbar2 a:hover{
+    background-color:rgb(255, 255, 255);
+    color : black;
+}
+.polaroid {
+    width : 45%;
+    background-color: rgb(245, 141, 23);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float :left;
+    padding-bottom: 0px;
+    margin : 20px;
+    margin-left: 40px;
+}
+.polaroid img {
+    width: 100%
+}
+.container h2{
+    font-family : cursive;
+    text-align: center;
+}
+.container p{
+    font-family: cursive;
+}
+.container {
+    padding: 10px 20px;
+}
+.heading a{
+    font-size: 40px;
+}
